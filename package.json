@@ -1,0 +1,31 @@
+{
+  "name": "tayyab-attiq-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website for Tayyab Attiq, a Software Engineer focused on full-stack development and AI-powered applications.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "npx http-server -p 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tayyab765/my-portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "tayyab-attiq",
+    "software-engineer",
+    "full-stack",
+    "ai"
+  ],
+  "author": "Tayyab Attiq",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tayyab765/my-portfolio/issues"
+  },
+  "homepage": "https://tayyab765.github.io/my-portfolio/",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1",
+    "@vercel/speed-insights": "^2.0.0"
+  }
+}

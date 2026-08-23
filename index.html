@@ -1,0 +1,969 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tayyab Attiq | Software Engineer</title>
+    <meta
+      name="description"
+      content="Portfolio of Tayyab Attiq, a Software Engineer and FAST-NUCES graduate specializing in full-stack development, MERN, AI-powered applications, RAG, and cloud technologies."
+    />
+    <meta name="author" content="Tayyab Attiq" />
+    <meta
+      name="keywords"
+      content="Tayyab Attiq, Software Engineer, Full-Stack Developer, AI Engineer, MERN, RAG, LangChain, Cloud, AWS, Pakistan"
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Tayyab Attiq | Software Engineer" />
+    <meta
+      property="og:description"
+      content="Portfolio of Tayyab Attiq, a Software Engineer and FAST-NUCES graduate specializing in full-stack development, MERN, AI-powered applications, RAG, and cloud technologies."
+    />
+    <meta property="og:image" content="portfolio_assets/Tayyab_Favicon.svg" />
+    <meta
+      property="og:url"
+      content="https://tayyab765.github.io/my-portfolio/"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Tayyab Attiq | Software Engineer" />
+    <meta
+      name="twitter:description"
+      content="Portfolio of Tayyab Attiq, a Software Engineer and FAST-NUCES graduate specializing in full-stack development, MERN, AI-powered applications, RAG, and cloud technologies."
+    />
+    <meta name="twitter:image" content="portfolio_assets/Tayyab_Favicon.svg" />
+
+    <link
+      rel="icon"
+      href="portfolio_assets/Tayyab_Favicon.svg"
+      type="image/svg+xml"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+
+    <!-- ── Floating Navbar ── -->
+    <nav class="site-nav" id="siteNav">
+      <div class="nav-pill">
+        <span class="nav-indicator" id="navIndicator"></span>
+        <a href="#home" class="nav-link active" data-section="home">
+          <i class="fa-solid fa-house nav-icon"></i>
+          <span class="nav-label">Home</span>
+        </a>
+        <a href="#about" class="nav-link" data-section="about">
+          <i class="fa-solid fa-user nav-icon"></i>
+          <span class="nav-label">About</span>
+        </a>
+        <a href="#experience" class="nav-link" data-section="experience">
+          <i class="fa-solid fa-briefcase nav-icon"></i>
+          <span class="nav-label">Experience</span>
+        </a>
+        <a href="#projects" class="nav-link" data-section="projects">
+          <i class="fa-solid fa-code nav-icon"></i>
+          <span class="nav-label">Projects</span>
+        </a>
+        <a href="#skills" class="nav-link" data-section="skills">
+          <i class="fa-solid fa-layer-group nav-icon"></i>
+          <span class="nav-label">Skills</span>
+        </a>
+        <a
+          href="#certifications"
+          class="nav-link"
+          data-section="certifications"
+        >
+          <i class="fa-solid fa-award nav-icon"></i>
+          <span class="nav-label">Certs</span>
+        </a>
+        <a href="#profiles" class="nav-link" data-section="profiles">
+          <i class="fa-solid fa-globe nav-icon"></i>
+          <span class="nav-label">Profiles</span>
+        </a>
+        <a href="#contact" class="nav-link" data-section="contact">
+          <i class="fa-solid fa-envelope nav-icon"></i>
+          <span class="nav-label">Contact</span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- ── Preloader: Boot Sequence ── -->
+    <div class="preloader" id="preloader">
+      <div class="preloader-particles" id="preloaderParticles"></div>
+
+      <!-- Branding -->
+      <div class="preloader-brand">
+        <div class="preloader-brand-main">
+          <span class="preloader-brand-name">Tayyab</span
+          ><span class="preloader-brand-accent">Attiq</span>
+        </div>
+        <div class="preloader-brand-subtitle">
+          <span class="subtitle-line"></span>
+          <span>Personal Portfolio</span>
+          <span class="subtitle-line"></span>
+        </div>
+      </div>
+
+      <!-- Sleek Loading Bar -->
+      <div class="preloader-sleek-track">
+        <div class="preloader-sleek-fill" id="preloaderSleekFill"></div>
+      </div>
+
+      <!-- Cycling Tagline -->
+      <div class="preloader-tagline">
+        <span class="tagline-word" style="--w: 0">Ideate.</span>
+        <span class="tagline-word" style="--w: 1">Design.</span>
+        <span class="tagline-word" style="--w: 2">Develop.</span>
+        <span class="tagline-word" style="--w: 3">Innovate.</span>
+      </div>
+    </div>
+
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <div class="background-container">
+      <canvas id="bg-canvas"></canvas>
+    </div>
+
+    <main class="hero" id="home">
+      <div class="floating-icon icon-top-left">
+        <i class="fa-solid fa-code"></i>
+      </div>
+      <div class="floating-icon icon-top-right">
+        <i class="fa-solid fa-brain"></i>
+      </div>
+      <div class="floating-icon icon-bottom-left">
+        <i class="fa-solid fa-trophy"></i>
+      </div>
+      <div class="floating-icon icon-bottom-right">
+        <i class="fa-regular fa-lightbulb"></i>
+      </div>
+
+      <div class="content-wrapper">
+        <h2 class="sub-title">
+          Software Engineer and FAST-NUCES graduate building scalable full-stack
+          applications and AI-powered systems.
+        </h2>
+        <br />
+        <br />
+        <h1 class="main-title">
+          <span class="purple-text" id="typing-text"></span>
+        </h1>
+        <br />
+        <br />
+        <h5 class="year">Tayyab Attiq | Software Engineer</h5>
+        <br />
+        <div class="hero-buttons">
+          <a href="#projects" class="btn-resume">View My Work</a>
+          <a href="#contact" class="btn-resume">Contact Me</a>
+          <a
+            href="portfolio_assets/Tayyab_Resume.html"
+            target="_blank"
+            id="openResumeBtn"
+            class="btn-resume"
+            >Download Resume</a
+          >
+        </div>
+      </div>
+    </main>
+
+    <section class="about-section" id="about">
+      <div class="glass-card scroll-reveal">
+        <h2>
+          About Me - <span class="purple-text">Building Real Solutions</span>
+        </h2>
+        <p>
+          I build software that solves real problems—not just projects that look
+          good on a resume. I'm a Software Engineer and fresh graduate from
+          FAST-NUCES Islamabad, focused on Full-Stack Development and AI-powered
+          applications.
+
+          <br /><br />I primarily work with the MERN stack and have hands-on
+          experience building AI systems using RAG, NLP, LangChain, vector
+          embeddings, and LLMs.
+
+          <br /><br />I've built AI-powered student guidance systems, full-stack
+          business applications, secure real-time messaging systems, and other
+          production-oriented projects.
+
+          <br /><br />I'm particularly interested in software engineering
+          practices involving scalability, security, testing, cloud
+          infrastructure, and reliable backend systems.
+        </p>
+      </div>
+    </section>
+
+    <br />
+
+    <section class="projects-section" id="experience">
+      <h2 class="section-title">
+        Work Experience - <span class="purple-text">Professional Journey!</span>
+      </h2>
+      <br />
+      <div class="timeline">
+        <div class="timeline-line">
+          <div class="timeline-progress"></div>
+        </div>
+
+        <div class="timeline-item left">
+          <div class="timeline-number">01</div>
+          <div class="timeline-content">
+            <div class="project-tag">Protect Lab, FAST-NUCES</div>
+            <h3>Software Development Intern</h3>
+            <p style="text-align: left; padding: 10px 0">
+              • Developed MalDef, a signature-based malware detection system.<br /><br />
+              • Evaluated the system against 1,000+ malware samples across
+              multiple malware families.<br /><br />
+              • Built a reusable signature database covering 10+ malware
+              categories.<br /><br />
+              • Worked in a cross-functional team of 4 developers and applied
+              secure coding practices and testing.<br /><br />
+              • Achieved approximately 90% code coverage using Git feature
+              branching and Agile/Scrum workflows.
+            </p>
+          </div>
+          <div class="timeline-date">JUN 2024 – AUG 2024</div>
+          <div class="timeline-dot"></div>
+        </div>
+
+        <div class="timeline-item right">
+          <div class="timeline-number">02</div>
+          <div class="timeline-content">
+            <div class="project-tag">DevelopersHub Corporation</div>
+            <h3>Full Stack Engineer</h3>
+            <p style="text-align: left; padding: 10px 0">
+              • Developed full-stack web applications using the MERN stack.<br /><br />
+              • Built responsive React.js interfaces and REST APIs using Node.js
+              and Express.js.<br /><br />
+              • Focused on clean, maintainable, production-oriented code and
+              practical business requirements.
+            </p>
+          </div>
+          <div class="timeline-date">JUN 2026 – JUL 2026</div>
+          <div class="timeline-dot"></div>
+        </div>
+
+        <div class="timeline-item left">
+          <div class="timeline-number">03</div>
+          <div class="timeline-content">
+            <div class="project-tag">
+              NAVTTC – IBM Full Stack JavaScript Professional Certification
+            </div>
+            <h3>Full Stack JavaScript Trainee</h3>
+            <p style="text-align: left; padding: 10px 0">
+              • Developing full-stack web applications using HTML, CSS,
+              JavaScript, React, Node.js, Express.js, and MongoDB.<br /><br />
+              • Building REST APIs and working with Git/GitHub while deploying
+              web applications.<br /><br />
+              • Completing hands-on industry-oriented projects focused on
+              practical, full-stack delivery.
+            </p>
+          </div>
+          <div class="timeline-date">JUN 2026 – PRESENT</div>
+          <div class="timeline-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <section class="projects-section" id="projects">
+      <h2 class="section-title">
+        Featured Projects - <span class="purple-text">What I've Built!</span>
+      </h2>
+      <br />
+      <div class="experience-grid">
+        <div class="experience-card">
+          <div class="experience-date">AI / FULL-STACK / RAG</div>
+          <div
+            class="project-tag"
+            style="display: inline-block; width: max-content"
+          >
+            Talk2FAST
+          </div>
+          <h3>Talk2FAST</h3>
+          <p>
+            An AI-powered student guidance platform designed to provide
+            document-grounded academic and admission assistance using RAG and
+            LLMs.
+          </p>
+          <div class="project-links-wrapper">
+            <a
+              href="https://github.com/Tayyab765"
+              target="_blank"
+              class="project-btn primary-btn"
+              ><i class="fa-brands fa-github"></i> GitHub</a
+            >
+            <a
+              href="https://tayyab765.github.io/my-portfolio/"
+              target="_blank"
+              class="project-btn primary-btn"
+              ><i class="fa-regular fa-eye"></i> Portfolio</a
+            >
+          </div>
+          <div
+            class="project-meta"
+            style="
+              margin-top: 1rem;
+              font-size: 0.85rem;
+              line-height: 1.7;
+              color: #d5d8e3;
+            "
+          >
+            <strong>Technologies:</strong> MERN, React, React Native, Node.js,
+            MongoDB, RAG, LangChain, FAISS, Ollama, Supabase, JWT, RBAC<br />
+            <strong>Highlights:</strong> Microservices architecture,
+            document-grounded chatbot, web/mobile interfaces, authentication,
+            analytics, mock-test functionality.
+          </div>
+        </div>
+
+        <div class="experience-card">
+          <div class="experience-date">FULL-STACK / MERN</div>
+          <div
+            class="project-tag"
+            style="display: inline-block; width: max-content"
+          >
+            Point of Sale System
+          </div>
+          <h3>POS System</h3>
+          <p>
+            Full-stack retail management system for inventory, billing, and
+            sales analytics.
+          </p>
+          <div class="project-links-wrapper">
+            <a
+              href="https://github.com/Tayyab765"
+              target="_blank"
+              class="project-btn primary-btn"
+              ><i class="fa-brands fa-github"></i> GitHub</a
+            >
+            <a
+              href="https://tayyab765.github.io/my-portfolio/"
+              target="_blank"
+              class="project-btn primary-btn"
+              ><i class="fa-regular fa-eye"></i> Portfolio</a
+            >
+          </div>
+          <div
+            class="project-meta"
+            style="
+              margin-top: 1rem;
+              font-size: 0.85rem;
+              line-height: 1.7;
+              color: #d5d8e3;
+            "
+          >
+            <strong>Technologies:</strong> React.js, Node.js, Express.js,
+            MongoDB, REST APIs, JWT, RBAC<br />
+            <strong>Highlights:</strong> Inventory and billing, real-time sales
+            analytics, 15+ REST endpoints, role-based access for
+            admin/cashier/manager.
+          </div>
+        </div>
+
+        <div class="experience-card">
+          <div class="experience-date">BACKEND / SECURITY / REAL-TIME</div>
+          <div
+            class="project-tag"
+            style="display: inline-block; width: max-content"
+          >
+            Encrypted Messaging System
+          </div>
+          <h3>Encrypted Messaging</h3>
+          <p>
+            A secure real-time messaging application using hybrid RSA and AES
+            encryption.
+          </p>
+          <div class="project-links-wrapper">
+            <a
+              href="https://github.com/Tayyab765"
+              target="_blank"
+              class="project-btn primary-btn"
+              ><i class="fa-brands fa-github"></i> GitHub</a
+            >
+            <a
+              href="https://tayyab765.github.io/my-portfolio/"
+              target="_blank"
+              class="project-btn primary-btn"
+              ><i class="fa-regular fa-eye"></i> Portfolio</a
+            >
+          </div>
+          <div
+            class="project-meta"
+            style="
+              margin-top: 1rem;
+              font-size: 0.85rem;
+              line-height: 1.7;
+              color: #d5d8e3;
+            "
+          >
+            <strong>Technologies:</strong> Node.js, WebSockets, RSA, AES,
+            MongoDB<br />
+            <strong>Highlights:</strong> Real-time messaging, hybrid encryption,
+            secure server-side routing without message access, secure
+            communication architecture.
+          </div>
+        </div>
+
+        <div class="experience-card">
+          <div class="experience-date">CLOUD / AWS / DEVOPS</div>
+          <div
+            class="project-tag"
+            style="display: inline-block; width: max-content"
+          >
+            Highly Available Web App
+          </div>
+          <h3>Student Records System</h3>
+          <p>
+            A highly available student records system deployed on AWS with load
+            balancing and automatic scaling.
+          </p>
+          <div class="project-links-wrapper">
+            <a
+              href="https://github.com/Tayyab765"
+              target="_blank"
+              class="project-btn primary-btn"
+              ><i class="fa-brands fa-github"></i> GitHub</a
+            >
+            <a
+              href="https://tayyab765.github.io/my-portfolio/"
+              target="_blank"
+              class="project-btn primary-btn"
+              ><i class="fa-regular fa-eye"></i> Portfolio</a
+            >
+          </div>
+          <div
+            class="project-meta"
+            style="
+              margin-top: 1rem;
+              font-size: 0.85rem;
+              line-height: 1.7;
+              color: #d5d8e3;
+            "
+          >
+            <strong>Technologies:</strong> AWS, EC2, RDS, Application Load
+            Balancer, Auto Scaling, VPC, IAM, Secrets Manager<br />
+            <strong>Highlights:</strong> Multi-AZ deployment, load balancing,
+            VPC isolation, secure secrets handling, scalability validation
+            through load testing.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <section class="skills-section" id="skills">
+      <h2 class="section-title">
+        Technical Skills - <span class="purple-text">Core Expertise!</span>
+      </h2>
+
+      <div class="skill-filters" id="skillFilters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="languages">Languages</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+        <button class="filter-btn" data-filter="ai">AI & ML</button>
+        <button class="filter-btn" data-filter="cloud">Cloud & DevOps</button>
+        <button class="filter-btn" data-filter="security">Security</button>
+        <button class="filter-btn" data-filter="practices">Practices</button>
+      </div>
+
+      <div class="skill-grid" id="skillGrid">
+        <div class="skill-card" data-category="languages">
+          <i class="devicon-javascript-plain colored"></i
+          ><span>JavaScript</span>
+        </div>
+        <div class="skill-card" data-category="languages">
+          <i class="devicon-typescript-plain colored"></i
+          ><span>TypeScript</span>
+        </div>
+        <div class="skill-card" data-category="languages">
+          <i class="fa-brands fa-python" style="color: #3776ab"></i
+          ><span>Python</span>
+        </div>
+        <div class="skill-card" data-category="languages">
+          <i class="devicon-cplusplus-plain colored"></i><span>C++</span>
+        </div>
+        <div class="skill-card" data-category="languages">
+          <i class="devicon-csharp-plain colored"></i><span>C#</span>
+        </div>
+        <div class="skill-card" data-category="languages">
+          <i class="fa-solid fa-database"></i><span>SQL</span>
+        </div>
+
+        <div class="skill-card" data-category="frontend">
+          <i class="devicon-react-original colored"></i><span>React.js</span>
+        </div>
+        <div class="skill-card" data-category="frontend">
+          <i class="devicon-react-original colored"></i
+          ><span>React Native</span>
+        </div>
+        <div class="skill-card" data-category="frontend">
+          <i class="fa-solid fa-mobile-screen-button"></i><span>Expo</span>
+        </div>
+        <div class="skill-card" data-category="frontend">
+          <i class="devicon-html5-plain colored"></i><span>HTML</span>
+        </div>
+        <div class="skill-card" data-category="frontend">
+          <i class="devicon-css3-plain colored"></i><span>CSS</span>
+        </div>
+        <div class="skill-card" data-category="frontend">
+          <i class="devicon-tailwindcss-original colored"></i
+          ><span>Tailwind CSS</span>
+        </div>
+
+        <div class="skill-card" data-category="backend">
+          <i class="devicon-nodejs-plain-wordmark colored"></i
+          ><span>Node.js</span>
+        </div>
+        <div class="skill-card" data-category="backend">
+          <i class="devicon-express-original"></i><span>Express.js</span>
+        </div>
+        <div class="skill-card" data-category="backend">
+          <i class="fa-solid fa-code"></i><span>REST APIs</span>
+        </div>
+        <div class="skill-card" data-category="backend">
+          <i class="devicon-mongodb-plain colored"></i><span>MongoDB</span>
+        </div>
+        <div class="skill-card" data-category="backend">
+          <i class="devicon-mysql-plain colored"></i><span>MySQL</span>
+        </div>
+        <div class="skill-card" data-category="backend">
+          <i class="fa-solid fa-database"></i><span>Supabase</span>
+        </div>
+
+        <div class="skill-card" data-category="ai">
+          <i class="fa-solid fa-brain"></i><span>RAG</span>
+        </div>
+        <div class="skill-card" data-category="ai">
+          <i class="fa-solid fa-link"></i><span>LangChain</span>
+        </div>
+        <div class="skill-card" data-category="ai">
+          <i class="fa-solid fa-comments"></i><span>NLP</span>
+        </div>
+        <div class="skill-card" data-category="ai">
+          <i class="fa-solid fa-robot"></i><span>LLMs</span>
+        </div>
+        <div class="skill-card" data-category="ai">
+          <i class="fa-solid fa-microchip"></i><span>Ollama</span>
+        </div>
+        <div class="skill-card" data-category="ai">
+          <i class="fa-solid fa-wand-magic-sparkles"></i
+          ><span>Prompt Engineering</span>
+        </div>
+        <div class="skill-card" data-category="ai">
+          <i class="fa-solid fa-search"></i><span>Vector Search</span>
+        </div>
+        <div class="skill-card" data-category="ai">
+          <i class="fa-solid fa-layer-group"></i><span>Vector Embeddings</span>
+        </div>
+
+        <div class="skill-card" data-category="cloud">
+          <i class="fa-brands fa-aws"></i><span>AWS</span>
+        </div>
+        <div class="skill-card" data-category="cloud">
+          <i class="fa-solid fa-docker"></i><span>Docker</span>
+        </div>
+        <div class="skill-card" data-category="cloud">
+          <i class="devicon-git-plain colored"></i><span>Git</span>
+        </div>
+        <div class="skill-card" data-category="cloud">
+          <i class="devicon-github-original"></i><span>GitHub</span>
+        </div>
+        <div class="skill-card" data-category="cloud">
+          <i class="fa-solid fa-code-branch"></i><span>GitHub Actions</span>
+        </div>
+        <div class="skill-card" data-category="cloud">
+          <i class="fa-solid fa-rocket"></i><span>CI/CD</span>
+        </div>
+        <div class="skill-card" data-category="cloud">
+          <i class="fa-solid fa-cloud"></i><span>Vercel</span>
+        </div>
+
+        <div class="skill-card" data-category="security">
+          <i class="fa-solid fa-key"></i><span>JWT</span>
+        </div>
+        <div class="skill-card" data-category="security">
+          <i class="fa-solid fa-user-shield"></i><span>RBAC</span>
+        </div>
+        <div class="skill-card" data-category="security">
+          <i class="fa-solid fa-lock"></i><span>RSA</span>
+        </div>
+        <div class="skill-card" data-category="security">
+          <i class="fa-solid fa-shield-halved"></i><span>AES</span>
+        </div>
+        <div class="skill-card" data-category="security">
+          <i class="fa-solid fa-lock-open"></i
+          ><span>End-to-End Encryption</span>
+        </div>
+        <div class="skill-card" data-category="security">
+          <i class="fa-solid fa-shield-virus"></i><span>Secure Coding</span>
+        </div>
+
+        <div class="skill-card" data-category="practices">
+          <i class="fa-solid fa-people-group"></i><span>Agile/Scrum</span>
+        </div>
+        <div class="skill-card" data-category="practices">
+          <i class="fa-solid fa-sitemap"></i><span>API Design</span>
+        </div>
+        <div class="skill-card" data-category="practices">
+          <i class="fa-solid fa-vial"></i><span>Testing</span>
+        </div>
+        <div class="skill-card" data-category="practices">
+          <i class="fa-solid fa-code"></i><span>Code Quality</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="certifications-section" id="certifications">
+      <h2 class="section-title">
+        Certifications - <span class="purple-text">Learning Milestones!</span>
+      </h2>
+
+      <div class="cert-grid">
+        <div class="cert-item">
+          <div
+            class="cert-img-wrapper"
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background: linear-gradient(135deg, #7c3aed, #0ea5e9);
+              color: #fff;
+              font-size: 1.1rem;
+              font-weight: 700;
+              letter-spacing: 0.08em;
+            "
+          >
+            AWS Cloud Quest
+          </div>
+          <div class="cert-info">
+            <h3>AWS Cloud Quest – Cloud Practitioner</h3>
+            <p>
+              Developed foundational cloud understanding and practical exposure
+              to cloud services, architecture, and problem solving.
+            </p>
+          </div>
+        </div>
+
+        <div class="cert-item">
+          <div
+            class="cert-img-wrapper"
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background: linear-gradient(135deg, #4f46e5, #a855f7);
+              color: #fff;
+              font-size: 1.1rem;
+              font-weight: 700;
+              letter-spacing: 0.08em;
+            "
+          >
+            AWS Academy
+          </div>
+          <div class="cert-info">
+            <h3>AWS Academy Graduate</h3>
+            <p>
+              Graduated from AWS Academy with foundational cloud skills relevant
+              to modern application deployment and infrastructure.
+            </p>
+          </div>
+        </div>
+
+        <div class="cert-item">
+          <div
+            class="cert-img-wrapper"
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background: linear-gradient(135deg, #0f172a, #1d4ed8);
+              color: #fff;
+              font-size: 1rem;
+              font-weight: 700;
+              letter-spacing: 0.08em;
+            "
+          >
+            Microsoft Learn
+          </div>
+          <div class="cert-info">
+            <h3>Microsoft Learn Student Ambassador</h3>
+            <p>
+              Contributed to learning communities, technical growth, and student
+              engagement while building hands-on technical confidence.
+            </p>
+          </div>
+        </div>
+
+        <div class="cert-item">
+          <div
+            class="cert-img-wrapper"
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background: linear-gradient(135deg, #2563eb, #14b8a6);
+              color: #fff;
+              font-size: 1rem;
+              font-weight: 700;
+              letter-spacing: 0.08em;
+            "
+          >
+            Google Soft Skills
+          </div>
+          <div class="cert-info">
+            <h3>Google Soft Skills Program</h3>
+            <p>
+              Strengthened communication, collaboration, and professional
+              readiness in a digital and team-based work environment.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <section class="profiles-section" id="profiles">
+      <h2 class="section-title">
+        Web Presence - <span class="purple-text">Professional Network!</span>
+      </h2>
+      <div class="profile-header">
+        <div
+          class="profile-img-main"
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #7c3aed, #0ea5e9);
+            color: #fff;
+            font-size: 2.2rem;
+            font-weight: 800;
+            letter-spacing: 0.12em;
+            border-radius: 50%;
+          "
+        >
+          TA
+        </div>
+        <div class="profile-text">
+          <p class="purple-text">Tayyab Attiq</p>
+        </div>
+      </div>
+
+      <div class="profiles-grid">
+        <a
+          href="https://www.linkedin.com/in/tayyab-attiq"
+          target="_blank"
+          class="profile-card"
+        >
+          <div class="profile-icon">
+            <i class="fa-brands fa-linkedin" style="color: #0077b5"></i>
+          </div>
+          <div class="profile-info">
+            <h3>LinkedIn</h3>
+            <p>Connect</p>
+          </div>
+        </a>
+
+        <a
+          href="https://github.com/Tayyab765"
+          target="_blank"
+          class="profile-card"
+        >
+          <div class="profile-icon">
+            <i class="fa-brands fa-github" style="color: #fff"></i>
+          </div>
+          <div class="profile-info">
+            <h3>GitHub</h3>
+            <p>Code</p>
+          </div>
+        </a>
+
+        <a href="mailto:attiqtayyab543@gmail.com" class="profile-card">
+          <div class="profile-icon">
+            <i class="fa-solid fa-envelope" style="color: #fbbf24"></i>
+          </div>
+          <div class="profile-info">
+            <h3>Email</h3>
+            <p>Reach Out</p>
+          </div>
+        </a>
+
+        <a
+          href="https://tayyab765.github.io/my-portfolio/"
+          target="_blank"
+          class="profile-card"
+        >
+          <div class="profile-icon">
+            <i class="fa-solid fa-globe" style="color: #22c55e"></i>
+          </div>
+          <div class="profile-info">
+            <h3>Portfolio</h3>
+            <p>Explore</p>
+          </div>
+        </a>
+      </div>
+      <br />
+      <p class="profile-note">
+        You can explore further by clicking on any of the profile cards above!
+      </p>
+    </section>
+
+    <br />
+
+    <section class="contact-section" id="contact">
+      <div class="contact-container">
+        <h2 class="section-title">
+          Get In Touch -
+          <span class="purple-text">Let's Build Something Meaningful!</span>
+        </h2>
+        <h4 class="contact-note">
+          Have a project, opportunity, or idea? Let's build something
+          meaningful.<br />
+          I'm open to collaborations, software engineering conversations, and
+          impactful product work.
+        </h4>
+        <div class="contact-card">
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder=" "
+                autocomplete="off"
+              />
+              <label for="name">Name</label>
+              <i class="fa-solid fa-user input-icon"></i>
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder=" "
+                autocomplete="off"
+              />
+              <label for="email">Email</label>
+              <i class="fa-solid fa-envelope input-icon"></i>
+            </div>
+            <div class="form-group">
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+                placeholder=" "
+              ></textarea>
+              <label for="message">Message</label>
+              <i class="fa-solid fa-comment input-icon"></i>
+            </div>
+            <button type="submit" class="btn-resume btn-submit">
+              <span>Send Message</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <h2 class="footer-logo">
+            Tayyab<span class="purple-text">Attiq</span>
+          </h2>
+          <p class="footer-tagline">
+            Building reliable software that solves real problems with scalable,
+            secure, AI-driven systems.
+          </p>
+        </div>
+
+        <ul class="footer-nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#profiles">Profiles</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="footer-socials">
+          <a
+            href="https://www.linkedin.com/in/tayyab-attiq"
+            target="_blank"
+            class="social-link linkedin"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/Tayyab765"
+            target="_blank"
+            class="social-link github"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="mailto:attiqtayyab543@gmail.com"
+            target="_blank"
+            class="social-link email"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Tayyab Attiq. All rights reserved.</p>
+        <button id="backToTop" class="back-to-top" aria-label="Back to Top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </footer>
+
+    <div id="resumeModal" class="resume-modal">
+      <div class="resume-modal-content glass-card">
+        <span class="close-modal" id="closeResumeBtn">&times;</span>
+        <h2 style="margin-bottom: 20px">
+          My Resume - <span class="purple-text">On Paper!</span>
+        </h2>
+        <div class="resume-iframe-container">
+          <iframe
+            src="portfolio_assets/Tayyab_Resume.html"
+            width="100%"
+            height="100%"
+            style="border: none"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script src="3d_background.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
