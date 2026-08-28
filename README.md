@@ -6,6 +6,20 @@ This portfolio has been personalized for Tayyab Attiq, a Software Engineer and F
 
 The project preserves the original polished layout, responsive behavior, and animation system while updating the content to reflect Tayyab Attiq's professional profile, technology stack, projects, and experience.
 
+The portfolio content is now split into data modules under `data/` and rendered into the existing UI shells by `js/render-content.js`. Projects, experience, education, certifications, skills, navigation, and social/profile links are all generated from structured arrays instead of hardcoded section markup.
+
+## Content Structure
+
+- `data/index.js` - shared site metadata, including hero typing words.
+- `data/navigation.js` - floating nav and footer section links.
+- `data/projects.js` - featured project cards.
+- `data/experience.js` - experience timeline entries.
+- `data/education.js` - education timeline entries.
+- `data/certifications.js` - certification cards.
+- `data/skills.js` - skill filters and skill cards.
+- `data/socialLinks.js` - profile cards and footer social links.
+- `js/render-content.js` - maps the data into the existing DOM containers.
+
 ## Technologies
 
 - HTML5, CSS3, and JavaScript
@@ -29,3 +43,4 @@ Tayyab Attiq
 - The portfolio is designed to keep the original aesthetic while representing Tayyab Attiq accurately.
 - Replace resume and profile assets with personal files when final deployment assets are ready.
 - Contact form submissions rely on the configured environment variables for email delivery.
+- Add or remove portfolio content by editing the data arrays in `data/` only; the renderer updates the UI automatically.

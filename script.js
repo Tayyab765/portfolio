@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
   scrollElements.forEach((el) => observer.observe(el));
 
   const typingText = document.getElementById("typing-text");
-  const words = [
+  const words = window.portfolioContent?.site?.heroWords || [
     "Software Engineer",
     "Full-Stack Developer",
     "AI Engineer",
