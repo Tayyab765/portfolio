@@ -107,11 +107,14 @@ body::before {
 }
 
 .hero {
-  text-align: center;
-  padding-top: 5vh;
   position: relative;
   width: 100%;
   max-width: 1200px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7rem 2rem 4rem;
   z-index: 1;
 }
 
@@ -119,7 +122,6 @@ body::before {
   font-size: 1.4rem;
   font-weight: 700;
   margin-bottom: 16px;
-
   letter-spacing: 0.5px;
 }
 
@@ -2725,6 +2727,15 @@ body {
 /* subtle glow under the whole hero content for depth */
 .content-wrapper-v1 {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: min(100%, 980px);
+  margin: 0 auto;
+  padding: 3rem 0 1rem;
+  gap: 1.2rem;
 }
 
 .content-wrapper-v1::before {
@@ -2745,17 +2756,15 @@ body {
   pointer-events: none;
 }
 
-/* tighten spacing now that the name is bigger */
-.content-wrapper-v1 {
-  gap: 1.2rem;
-}
-
 /* Name badge — pill instead of plain text */
 /* Name badge — large gradient text, no pill background */
 .name-badge-v1 {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.6rem;
+  min-height: 2rem;
+  height: 2rem;
   padding: 0;
   border-radius: 0;
   background: none;
@@ -2773,6 +2782,24 @@ body {
   animation: shine-v1 5s linear infinite;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
+.min-h-20 {
+  min-height: 5rem;
+}
+
+.min-h-32 {
+  min-height: 8rem;
+}
+
+@media (min-width: 768px) {
+  .md\:min-h-40 {
+    min-height: 10rem;
+  }
+}
+
 .badge-dot-v1 {
   width: 8px;
   height: 8px;
@@ -2784,11 +2811,21 @@ body {
 
 /* Main title */
 .main-title-v1 {
+  min-height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: clamp(2.6rem, 6vw, 4.2rem);
   font-weight: 800;
   line-height: 1.15;
   margin: 0;
   letter-spacing: -0.5px;
+}
+
+@media (min-width: 768px) {
+  .main-title-v1 {
+    min-height: 10rem;
+  }
 }
 
 .purple-text-v1 {
@@ -2811,12 +2848,17 @@ body {
 
 /* Sub title */
 .sub-title-v1 {
+  min-height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 1.1rem;
   font-weight: 400;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.65);
-  max-width: 600px;
+  max-width: 700px;
   margin: 0;
+  text-align: center;
 }
 
 /* Buttons */
@@ -2825,7 +2867,8 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
-  margin-top: 0.5rem;
+  margin-top: 0.75rem;
+  margin-bottom: 1.25rem;
 }
 
 .btn-resume-v1 {
