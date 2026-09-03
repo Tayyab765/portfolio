@@ -199,21 +199,27 @@
     container.innerHTML = items
       .map((cert) => {
         const badgeStyle = `background: linear-gradient(135deg, ${cert.accentFrom || "#7c3aed"}, ${cert.accentTo || "#0ea5e9"}); color: #fff; font-size: 1rem; font-weight: 700; letter-spacing: 0.08em; display: flex; align-items: center; justify-content: center;`;
-        const overlay = cert.credentialUrl
-          ? `
-            <div class="cert-overlay">
-              <a href="${escapeHtml(cert.credentialUrl)}" target="_blank" rel="noopener noreferrer" class="cert-overlay-link">
-                <span>View Credential</span>
+        const certLink = cert.link || cert.credentialUrl || cert.url || "#";
+        const certImage = cert.image || cert.logo || "";
+        const imageMarkup = certImage
+          ? `<img src="${escapeHtml(certImage)}" alt="${escapeHtml(cert.name)}" />`
+          : `<div class="cert-img-fallback" style="${badgeStyle}">${escapeHtml(cert.badgeText || cert.issuer || cert.name)}</div>`;
+        const overlay =
+          certLink !== "#"
+            ? `
+            <a class="cert-overlay" href="${escapeHtml(certLink)}" target="_blank" rel="noopener noreferrer" aria-label="View credentials for ${escapeHtml(cert.name)}">
+              <span class="cert-overlay-link">
+                <span>View Credentials</span>
                 <i class="fa-solid fa-arrow-right"></i>
-              </a>
-            </div>
+              </span>
+            </a>
           `
-          : "";
+            : "";
 
         return `
           <article class="cert-item">
-            <div class="cert-img-wrapper" style="${badgeStyle}">
-              ${cert.logo ? `<img src="${escapeHtml(cert.logo)}" alt="${escapeHtml(cert.name)}" />` : escapeHtml(cert.badgeText || cert.issuer || cert.name)}
+            <div class="cert-img-wrapper">
+              ${imageMarkup}
               ${overlay}
             </div>
             <div class="cert-info">

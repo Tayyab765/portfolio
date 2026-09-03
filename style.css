@@ -1622,6 +1622,8 @@ body {
   align-items: center;
   justify-content: center;
   opacity: 0;
+  text-decoration: none;
+  cursor: pointer;
   transition: all 0.4s ease;
 }
 
