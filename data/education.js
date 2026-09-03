@@ -12,4 +12,15 @@ window.portfolioContent.education = [
     description: "",
     achievements: [],
   },
+  {
+    id: "fazaia-nur-khan",
+    institution: "Fazaia Intermediate College, PAF Base Nur Khan",
+    degree: "FSc Pre-Engineering",
+    location: "Rawalpindi, Pakistan",
+    startDate: "2020",
+    endDate: "2022",
+    current: false,
+    description: "",
+    achievements: [],
+  },
 ];
